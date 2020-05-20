@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!--meta taags aqui-->
+    <title>Footer | UI UX</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Open Sans";
+        }
+        .container{
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .clear{
+            clear: both;
+        }
+        footer{
+            padding: 20px;
+            position: absolute;
+            bottom:0;
+            width:100%;
+            background-color: #ee6e73;
+        }
+        .footer-single{
+            width: 33.3%;
+            padding: 0 15px;
+            color: white;
+        }
+
+        .footer-single h2{
+            font-weight: normal;
+            font-size: 20px;
+        }
+        .footer-single p{
+            font-size: 15px;
+            font-weight: 300;
+        }
+        .social-media{
+            margin-top: 10px ;
+        }
+        .footer-single a{
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        footer.two{
+            background-color: #ff5258;
+            padding:8px 0;
+            text-align: center;
+            color: white;
+        }
+        footer.two p{
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 768px){
+            .footer-single{
+                width: 100%;
+                padding: 30px;
+                text-align: center;
+            }
+        }
+    </style>    
+</head>
+<body>
+    <footer class="one">
+        <div class="container">
+             <div class="footer-single">
+                 <h2>Sobre:</h2>
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate nulla eveniet totam? Tempore cupiditate exercitationem officia accusantium. Itaque deserunt neque rem.</p>
+             </div><!--footer-single-->
+             
+             <div class="footer-single">
+                <h2>Telefone:</h2>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> (18) 99999-9999</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> (18) 99999-9999</p>
+             </div><!--footer-single-->
+
+             <div class="footer-single">
+                <h2>Conecte-se conosco:</h2>
+                    <div class="social-media">
+                        <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+                        <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+                    </div><!--social-media-->
+             </div><!--footer-single-->
+
+        </div><!--container -->
+    </footer><!--one-->
+
+    <footer class="two">
+        <div class="container">
+             <p>Todos os direitos reservados</p>
+        </div><!--container-->
+    </footer><!--two-->
+</body>
+</html>

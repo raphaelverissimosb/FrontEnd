@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Menu | UI & UX</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-desktop">
+                    <a href="index.html">Logomarca</a>
+            </div><!--logo-desktop-->
+            
+            <nav class="desktop">
+                
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav><!--desktop-->
+
+            <nav class="mobile">
+                
+                <div class="logo-mobile">
+                    <a href="index.html">Logomarca</a>
+                    <h3><i class="fa fa-bars"></i></h3>
+                </div><!--logo-mobile-->
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+
+            </nav><!--mobile-->
+
+            <div class="clear"></div>
+        </div><!--container-->
+    </header> 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+      <script>
+        $(function(){
+            $('nav.mobile h3').click(function(){
+                $('nav.mobile ul').slideToggle();
+            })
+        })
+    </script>       
+</body>
+</html>

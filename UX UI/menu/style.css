@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 960px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+.clear{
+    clear: both;
+}
+
+/*HEADER*/
+
+header{
+    background-color:#333 ;
+    padding: 4px 0;
+}
+
+/*Nav DESKTOP*/
+.logo-desktop{
+    float: left;
+}
+.logo-desktop a{
+    color: white;
+    font-weight: 18px;
+}
+nav.desktop{
+    float: right;
+}
+nav.desktop li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.desktop ul li > a {
+    color: white;
+    text-decoration: none;
+}
+.desktop ul li a:hover{
+    text-decoration: underline;
+}
+
+/*Nav MOBILE*/
+/*Escondendo o nav mobile*/
+nav.mobile{
+    display:none;
+}
+
+
+/*Medias Screen*/
+
+@media screen and (max-width: 768px){
+    .logo-desktop , nav.desktop{
+        display: none;
+    }
+    .mobile ul{
+        display: none;
+        position: absolute;
+        left: -2%;
+        top: 30px;
+        width: 104%;
+        text-align: center;
+        cursor: pointer;
+
+    }
+    nav.mobile li{
+        padding: 8px 0;
+        border: 1px solid white;
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+    }
+    nav.mobile li a{
+        color: white;
+        text-decoration: none;
+    }
+    .mobile h3{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .logo-mobile{
+        color: white;
+        font-weight: 18px;
+    }
+    .logo-mobile a{
+        color: white;
+        text-decoration: none;
+    }
+    nav.mobile{
+        display: block;
+        width: 100%;
+        text-align: center;
+        position: relative;
+    
+    }
+
+}

@@ -1,0 +1,586 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans' , sans-serif;
+    /*este e o modulo para zerar toda a sua formatacao de sua pagina*/
+}
+
+
+/*Auxiliary classe*/
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+    /* implementa um novo contexto em sua pagina centralizando todos os it */
+}
+.clear{
+    clear: both;
+    /*Para colocar um clear apos utilizar o style float dentro de uma div*/
+}
+.w40{
+    width: 40%;
+    float: left;
+}
+.w50{
+   width: 50%;
+   float: left;
+   /*para colocar um padrao de identacao*/
+}
+.w60{
+    width: 60%;
+    float: left;
+}
+.center{
+    text-align: center;
+}
+.w33{
+    float: left;
+    width: 33.33%;
+    /*para colocar um padrao de identacao*/
+}   
+
+
+/*HEADER*/
+header{
+    padding: 8px 0;
+}
+.logo{
+    float: left;
+}
+.logo a {
+    color: black;
+    text-decoration: none;
+}
+nav.menu-desktop li.selected{
+    font-weight: bold;
+    text-decoration: underline;
+}
+nav.menu-desktop{
+    float: right;
+}
+nav.menu-desktop li{
+    padding: 0 10px;
+    font-weight: lighter;
+    display: inline-block;
+}
+nav.menu-desktop ul{
+    position: relative;
+    top: 8px;
+}
+nav.menu-desktop a {
+    color: black;
+    text-decoration: none;
+}
+
+nav.menu-mobile{
+    display: none;
+    float: right;
+}
+nav.menu-mobile ul{
+    display: none;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 999;
+    text-align: center;
+}
+nav.menu-mobile li{
+    padding: 8px 0;
+    border-bottom: 1px solid black;
+    list-style: none;
+}
+nav.menu-mobile h2{
+    cursor: pointer;
+    display: block;
+}
+nav.menu-mobile a{
+    color: black;
+    text-decoration: none;
+
+}
+
+/*Main Section*/
+section.main-bg{
+    position:relative;
+    width: 100%;
+    padding: 140px 0 200px 0;
+    background-image: url('../images/Rosinante.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+section.main-bg > .container{
+    position:relative;
+    z-index:2;
+}
+.overlay{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.6);
+    left: 0;
+    top: 0;
+}
+section.main-bg h2{
+    text-align: center;
+    color: #52aaa7;
+    font-size:30px;
+    font-weight: normal;
+}
+section.main-bg p{
+    color: white;
+    font-size: 17px;
+    margin-top:15px;
+}
+
+
+/*Section Diferenciais*/
+section.diferenciais{
+    padding: 30px 0;
+    text-align: center;
+}
+.line-text{
+    position: relative;
+    display: inline-block;
+    color: #52aaa7;
+}
+.line-text > div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 3px;
+    background-color: #52aaa7;
+}
+.line-text h2{
+    font-size: 27px;
+    font-weight: normal;
+}
+.icones-diferenciais{
+    margin-top: 40px;
+}
+.box-icone-single{
+    float: left;
+    width: 33.3%;
+    padding: 2%;
+}
+.box-icone-single h2{
+    color:#8a6b62;
+    font-size: 30px;
+}
+.box-icone-single p{
+    color: #646464;
+    font-weight: lighter;
+    font-size: 10px;    
+}
+
+
+/*Section Equipe*/
+section.sobre-equipe{
+    padding: 30px 0;
+    background:rgb(190, 189, 189)
+}
+section.sobre-equipe > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.equipe-container{
+    width: 40%;
+}
+.sobre-container{
+    width: 60%;
+}
+.sobre-container p{
+    color:black;
+    font-size: 15px;
+    margin-top: 15px;
+}
+.avatar-box{
+    margin-top: 15px;
+}
+.img-avatar{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    background-color: seashell;
+}
+.descricao-avatar{
+    width: calc(100% - 70px);
+    display: inline-block;
+    padding: 0 10px;
+}
+.descricao-avatar h3{
+    color: rgb( 30,30,30);
+    font-weight: normal;
+    font-style: italic;
+}
+.descricao.avatar p{
+    color: rgb( 30,30,30);
+    font-weight: normal;
+    font-weight: lighter;
+}
+
+/*Section Inscricao*/
+section.inscricao{
+    background-color: #52aaa7;
+    height: 60px;
+    padding-top: 10px 0;
+}
+.w50 h2 i{
+    margin-right: 10px;
+}
+.w50 h2{
+    color: white;
+}
+.inscricao-form input[type=text]{
+    width: calc(100% - 90px);
+    height: 40px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    background-color: white;
+}
+.inscricao-form input[type=submit]{
+    width: 90px;
+    height: 40px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    background-color:#1d6c64 ;
+    cursor: pointer;
+    font-size: 14px;
+}
+.inscricao .container .w50{
+    margin-top: 10px;
+}
+
+/*Section Cards*/
+section.cards{
+    padding:30px 0;
+}
+.card-single{
+    width: 33.3%;
+    float: left;
+    padding: 50px;
+    
+}
+.card-single img{
+    width: 100%;
+}
+.card-single h3{
+    font-weight: normal;
+    font-size: 19px;
+}
+.card-single p{
+    padding: 10px 0;
+    font-weight: lighter;
+    font-size:16px;
+    border-bottom: 20px solid #ccc;
+}
+
+
+/*Section Footer 1*/
+footer.footer1{
+    background-color: #52aaa7;
+    padding: 20px 0;
+    color: white;
+}
+
+footer.footer1 h2{
+    font-weight: normal;
+    font-size: 23px;
+}
+footer.footer1 p{
+    margin-top: 8px;
+    font-weight: lighter;
+}
+footer.footer1 a{
+    display: block;
+    color: white;
+}
+div.group-icons a{
+    font-size: 18px;
+    display: inline-block ;
+    margin: 15px 10px;
+}
+/*--------------------------------------------------*/
+/*PAGINA SOBRE*/
+section.title-page{
+    padding: 30px;
+    width: 100%;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+section.title-page > .container{
+    position: relative;
+    z-index: 101;
+}
+section.title-page h2{
+    color:#44D4C5;
+    font-size: 27px;
+    font-weight: normal;
+}
+.overlay__title-page{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}   
+section.title-page p{
+    font-weight: lighter;
+    font-size: 16px;
+    color: white;
+    margin-top: 15px;
+}
+
+section.sobre__noticia{
+    padding: 30px 0;
+}
+.sobre__single__noticia img{
+    float: left;
+    width: 50%;
+}
+.sobre__single__noticia p{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+/*Section Efeito Parallax*/
+section.parallax{
+    padding: 30px 0;
+    width: 100%;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/img1.jpg');
+    background-attachment: fixed;/*para realizar o efeito parallax*/
+    text-align: center;
+
+}
+section.parallax h2.chamada-parallax{
+    color: #44D4C5;
+    border: 1px solid #44D4C5;
+    padding: 5px 8px;
+    font-size: 18px;
+    display: inline-block;
+}
+section.parallax p{
+    color: white;
+
+}
+section.parallax{
+    position: relative;
+}
+section.parallax >.container{
+    position: relative;
+}
+.overlay-parallax{
+    position: absolute;
+    background-color: rgba(0, 0, 0,0.6);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    left: 0;
+    top: 0;
+}
+
+/*Section Equipe*/
+.equipe{
+   padding: 40px 0;
+}
+.equipe-circles{
+    margin-top:50px;
+    display: flex;  
+    flex-wrap: wrap;
+}
+.equipe-circle-single{
+    padding: 0 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 33.3%;
+}
+.avatar-single{
+    position: relative;
+    width: 60%;
+    padding-top: 60%;
+    margin: 0 auto;
+}
+.avatar-single-container{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #9c9c9c;
+}
+.equipe-circle-wrapper h3{
+    margin-top: 10px;
+}
+
+/*Section Sobre Final*/
+.sobre-final{
+    background-cDolor: rgb(219, 219, 219);
+    border-top: 2px solid rgb(210,210,210);
+    padding: 20px 0;
+}
+section.sobre-final p{
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.card-title{
+    position: relative;
+}
+.card-title img{
+    max-width: 100%;
+}
+.sobre-final h2{
+    display: block;
+    color: #52aaa7;
+}
+.card-text{
+    width: 80%;
+    position: relative;
+}
+.card-text img{
+    max-width: 100%;
+}
+.card-text h3{
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+
+/*CONTATO*/
+/*Section Contato*/
+section.contato{
+    padding: 30px 0;
+    min-height: 600px;
+}
+section.contato .w50 , section.contato .w100{
+    padding:0 10px;
+}
+.formulario form{
+    margin-top: 10px;
+}
+.formulario h2{
+    background-color: #DDDDDD;
+    text-align: center;
+    color: #ACAC9D;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 4px 0;
+}
+.formulario input[type=text], .formulario input[type=email]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding-left:  8px ;
+}
+.formulario textarea{
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding:10px;
+    resize: vertical;
+}
+.tags-form{
+    padding-left:50px;
+}
+.tags-form h2{
+    font-weight: normal;
+}
+.tags-form p{
+    font-weight: lighter;
+}   
+.tags-form p.tag-contato{
+    color: white;
+    background-color: #249B8F;
+    text-align: center;
+    margin-top: 10px;
+    padding: 8px 4px;
+}
+/*MEDIA SCREEN*/
+@media screen and (max-width:800px){
+    .tags-form{
+        padding-left:0px;
+    }
+    .w50 ,.w33 , .w60  , .w40{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .box-icone-single{
+        width: 100%;
+    }
+    .equipe-container{
+        width: 100%;
+        padding: 1%;
+    }
+    .sobre-container{
+        width: 100%;
+        padding: 1%;
+        margin-top: 60px;
+    }
+    .avatar-box h3{
+        position: relative;
+        display: inline-block;
+        top: -15px;
+    }
+    .avatar-box p{
+        position: relative;
+        top: -15px;
+    }
+    .card-single{
+        width: 100%;
+    }
+    .sobre__single__noticia img{
+        width: 100%;
+    }
+    .sobre__single__noticia p{
+        width: 100%;
+    }
+    .footer1{
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width: 500px){
+    nav.menu-desktop{
+        display: none;
+    }
+    nav.menu-mobile{
+        display: block;
+    }
+    .card-single{
+        padding: 10px;
+    }
+    .equipe-circle-single{
+        padding: 0 8px;
+        width: 100%;
+    }
+    .card-text{
+        width: 100%;
+    }
+
+}

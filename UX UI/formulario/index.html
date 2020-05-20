@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario UX | UI</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #5e3ea1;
+        }
+        .container{
+            max-width: 960px;
+            padding: 0 2%;
+            margin: 0 auto;
+        }
+        section.formulario{
+            
+        }
+        .form-group input[type=text]{
+            width: 100%;
+            height: 40px;
+            border: 1px solid #ccc;
+            padding-left:  10px;
+            margin-top: 10px;
+        }
+        .form-group input[type=email]{
+            width: 100%;
+            height: 40px;
+            border: 1px solid #ccc;
+            padding-left:  10px;
+            margin-top: 10px;
+        }
+        .form-group textarea {
+            width: 100%;
+            height: 120px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            resize: vertical;
+        }
+        .form-group input[type=submit]{
+            width: 100px;
+            height: 40px;
+            cursor: pointer;
+            background-color: #e7426b;
+            border: 0;
+            color: white;
+            margin-top: 10px;
+        }
+        .form-group span{
+            display: inline-block;
+            color: red;
+            padding: 4px  0 ;
+        }
+        .box-sucesso{
+            margin-top: 10px;
+            display: none;
+            width: 100%;
+            padding: 10px; 
+            background-color: #5fb382;
+            text-align: center;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="formulario">
+        
+        <div class="container">
+            <form>
+                    <div class="form-group">
+                            <span></span>
+                            <input type="text" name="nome" placeholder="Nome..." required>
+                    </div><!--form-group-->
+
+                    <div class="form-group">
+                        <span></span>
+                        <input type="email" name="emaiil" placeholder="e-mail ..." required>
+                    </div><!--form-group-->
+                
+                    <div class="form-group">
+                        <span></span>
+                        <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
+                    </div><!--form-group-->
+
+                    <div class="form-group">
+                        <input type="submit" value="Enviar">
+                    </div><!--form-group-->
+            </form> 
+            <div class="box-sucesso">
+                Sua mensagem foi enviada com sucesso!
+            </div><!--box-sucesso-->
+        </div><!--container-->
+
+        </section><!--formulario-->
+
+
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script>
+       $(function(){
+
+
+            $('form').submit(function(){
+
+                var erro = false;
+                var nome = $('[name=nome]').val();
+                var email = $('[name=email]').val();
+                var mensagem = $('[name=mensagem]').val();
+                alert(nome);
+
+                resetForm();
+
+                if(nome  == ''){
+                        erro = true;
+                        var el = $('[name=nome]');
+                        el.parent().find('span').html('Por favor, ensira o seu nome!');
+                        el.css('border', '1px solid red');
+                }
+                
+                if(email  == ''){
+                        erro = true;
+                        var el = $('[name=email]');
+                        el.parent().find('span').html('Por favor, ensira o seu email!');
+                        el.css('border', '1px solid red');
+                }
+
+                if(mensagem  == ''){
+                        erro = true;
+                        var el = $('[name=mensagem]')
+                        el.parent().find('span').html('Por favor, ensira a sua mensagem!');
+                        el.css('border', '1px solid red');
+                }
+
+                if(erro == false){
+                    $('.box-sucesso').fadeIn(function(){
+                            setTimeout(function() {
+                                $('box-sucesso').fadeOut
+                            }, 5000);
+                    });
+                    $(this)[0].reset();
+                }
+
+                return false;
+            })
+
+            function resetForm(){
+                $('input[type=text], textarea').css('border' , '1px solid #ccc'); 
+                $('span').html('');
+            }
+       })
+   </script> 
+</body>
+</html>
