@@ -324,6 +324,7 @@ section.contato form .input-wrapper:nth-of-type(5){
 
 /*------------------Footer-----------------------*/
 footer{
+    margin-top: 20px;
     padding: 40px 2%;
     background-color: #252525;
 }
@@ -581,8 +582,49 @@ section.venda{
     background-size: cover;
 }
 
-
-
+/*---------------------SOBRE------------------*/
+section.sobre{
+    min-height: 90%;
+    padding: 60px 2% 20px  2%;
+}
+section.sobre .container{
+    margin-top: 30px;
+    max-width: 840px;
+}
+section.sobre .img-destaque-sobre{
+    width: 100%;
+    padding-top: 60%;
+    background-color: rgb(180,180,180);
+}
+section.descricao-autor{
+    margin-top: 20px;
+}
+.descricao-autor h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.descricao-autor p{
+    font-size: 20px;
+    line-height: 35px;
+}
+.descricao-autor-2{
+    margin-top: 40px;
+}
+.img-small{
+    width: 30%;
+    padding-top: 30%;
+    background-color: rgb(180,180,180);
+    float: left;
+}
+.descricao-autor-3{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    font-size: 20px;
+    line-height: 35px;
+}
 
 /*-------------------Media---------------------------*/
 @media screen and (max-width:1400px){
@@ -694,6 +736,14 @@ section.venda{
         width: 100%;
         text-align: center;
         padding-bottom: 40px;
+    }
+    .img-small{
+        width: 100%;
+        padding-top: 100%;
+    }
+    .descricao-autor-3{
+        text-align: center;
+        width:100%;
     }
 
 }
