@@ -7,9 +7,9 @@ Neste repositorio,projetos como este abaixo estarao disponiveis, os mesmos segue
 OBS - outras paginas para a navegacao do menu foram adicionada.JS sera enserido em breve.
 
 ### Construido com 
-*HTML
-*CSS
-*Fireworks
+* HTML
+* CSS
+* Fireworks
 
 
 ![Exemplo de portifolio](https://github.com/raphaelverissimosb/FrontEnd/blob/master/rm-home-site-full.fw.png)
